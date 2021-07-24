@@ -58,8 +58,8 @@ function Tasks() {
           <th>Action</th>          
         </thead>
         <tbody >
-	        {data.map((task) => (
-            <tr id={task.id} className={classes.tr}>
+	        {data.map((task, i) => (
+            <tr id={task.id} key="{i}" className={classes.tr}>
               <td>TL &nbsp; {task.id}</td>
               <td>
                 <b>{task.title}</b> <br />
