@@ -36,7 +36,7 @@ function Edittask() {
         .catch((err) => {
           console.log(err);
         });
-         }, []);// eslint-disable-line react-hooks/exhaustive-deps
+         }, []);
 
 
   const handleChange = e => {

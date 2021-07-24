@@ -16,7 +16,6 @@ export default function Home() {
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossOrigin="anonymous"
         />
-        <script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script> 
         
        
       </Head>

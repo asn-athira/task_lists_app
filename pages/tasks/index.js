@@ -23,7 +23,7 @@ function Tasks() {
       .catch((err) => {
         console.log(err);
       });
-       }, []);// eslint-disable-line react-hooks/exhaustive-deps
+       }, []);
 
       const deleteTask = (id) => {
         fetch(`${baseURL}/api/tasks/${id}`, {
