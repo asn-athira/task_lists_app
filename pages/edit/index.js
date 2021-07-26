@@ -2,14 +2,14 @@ import classes from './../create/task.module.css';
 import Link from 'next/link';
 import { useRouter } from "next/router";
 import React, {useState, useEffect} from 'react';
+import { baseURL } from '../../config';
 
 
 
 function Edittask() {
   
-    const initTask = {title: '', description: '', project_name: '', user: '', status: '', si_no: ''};
+    const initTask = {title: '', description: '', project_name: '', user: '', status: '', si_no: '1'};
     const [task, setTask] = useState(initTask);
-    const baseURL = "http://localhost:8080"
 
     const router = useRouter();
     const {
@@ -102,7 +102,7 @@ function Edittask() {
             <input type="text" name="si_no"
                   value={task.si_no}
                   onChange={handleChange}
-                   placeholder="SI No"/>
+                   placeholder="SI No" hidden/>
             <button type="button" className="btn signup" onClick={submitFormHandler}>Save</button>
             <hr/>
            

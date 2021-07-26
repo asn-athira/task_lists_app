@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import classes from './task.module.css';
 import Link from 'next/link';
+import { baseURL } from '../../config';
 
 
 function Tasks() {
-  const baseURL = "http://localhost:8080"
+  //const baseURL = "http://localhost:8080"
   const [data, setData] = useState([]); 
  
 
@@ -50,7 +51,7 @@ function Tasks() {
       
       <table className={classes.table}>
         <thead className={classes.thead}>
-          <th>Id</th>
+          <th>Id{baseURL}</th>
           <th>Title</th>
           <th>Project Name</th>
           <th>User</th> 

@@ -2,14 +2,13 @@ import classes from './../create/task.module.css';
 import Link from 'next/link';
 import { useRouter } from "next/router";
 import React, {useState, useEffect} from 'react';
-
+import { baseURL } from '../../config';
 
 
 function Showtask() {
   
     const initTask = {title: '', description: '', project_name: '', user: '', status: '', si_no: ''};
     const [task, setTask] = useState(initTask);
-    const baseURL = "http://localhost:8080"
 
     const router = useRouter();
     const {

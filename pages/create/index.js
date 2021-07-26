@@ -1,12 +1,13 @@
 import classes from './task.module.css';
 //import React, { useRef } from 'react';
 import React, {useState} from 'react';
+import { baseURL } from '../../config';
 
 
 function Createtask() {
     const initTask = {title: '', description: '', project_name: '', user: '', status: '', si_no: '1'};
     const [task, setTask] = useState(initTask);
-    const baseURL = "http://localhost:8080"
+   // const baseURL = "http://localhost:8080"
 
 
     
