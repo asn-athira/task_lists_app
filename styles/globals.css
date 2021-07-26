@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#fff;
+    background:#D5DBDB;
 }
 th{
   padding:3px;
@@ -17,6 +17,22 @@ td{
   background:#fff;
   cursor:default;
   padding:3px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.fa-trash {
+    background-color: red;
+}
+.fa {
+  background: blueviolet;
+  color: white;
+}
+.fa-button{
+    background: blueviolet;
 }
 .form-modal{
     position:relative;

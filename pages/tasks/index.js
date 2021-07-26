@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import classes from './task.module.css';
 import Link from 'next/link';
 import { baseURL } from '../../config';
+//import { FontAwesomeIcon } from '@fortawesome/fontawesome-free'
+import '../../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 
 function Tasks() {
@@ -61,30 +63,28 @@ function Tasks() {
         <tbody >
 	        {data.map((task, i) => (
             <tr id={task.id} key="{i}" className={classes.tr}>
-              <td>TL &nbsp; {task.id}</td>
+              <td>TL &nbsp;-&nbsp; {task.id}</td>
               <td>
-                <b>{task.title}</b> <br />
-                {task.description}
+                <b><Link href={`/show?id=${task.id}`}>{task.title}</Link></b> <br /><br />
+                <i className="fa fa-user" />&nbsp;&nbsp;&nbsp;&nbsp;{task.user}
               </td>
               <td>{task.project_name}</td>
               <td>{task.user}</td>
-              <td  style={{
-                 
-                }}>{task.status}</td>              
+              <td  >{task.status}</td>              
               <td>
-                <button >
+                <button className="fa-button" >
                   <Link href={`/edit?id=${task.id}`}>
-                    Edit
+                    <i className="fa fa-edit" />
                   </Link>
-                </button>
-                <button >
+                </button>&nbsp;&nbsp;
+                <button className="fa-button" >
                   <Link href={`/show?id=${task.id}`}>
-                    Show
+                    <i className="fa fa-eye" />
                   </Link>
-                </button>
+                </button>&nbsp;&nbsp;
                 
-                <button onClick={() => { deleteTask(task.id) }} >
-                  Delete
+                <button style={{ background: 'red',}} className="fa-button" onClick={() => { deleteTask(task.id) }} >
+                  <i className="fa fa-trash" />
                 </button>
                 
                 </td>
