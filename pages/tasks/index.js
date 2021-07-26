@@ -56,7 +56,6 @@ function Tasks() {
           <th>Id</th>
           <th>Title</th>
           <th>Project Name</th>
-          <th>User</th> 
           <th>Status</th> 
           <th>Action</th>          
         </thead>
@@ -66,10 +65,9 @@ function Tasks() {
               <td>TL &nbsp;-&nbsp; {task.id}</td>
               <td>
                 <b><Link href={`/show?id=${task.id}`}>{task.title}</Link></b> <br /><br />
-                <i className="fa fa-user" />&nbsp;&nbsp;&nbsp;&nbsp;{task.user}
+                <i style={{ background: 'white', color: 'black',}} className="fa fa-user" />&nbsp;&nbsp;&nbsp;&nbsp;{task.user}
               </td>
               <td>{task.project_name}</td>
-              <td>{task.user}</td>
               <td  >{task.status}</td>              
               <td>
                 <button className="fa-button" >
