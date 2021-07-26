@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import classes from './task.module.css';
 import Link from 'next/link';
 import { baseURL } from '../../config';
-//import { FontAwesomeIcon } from '@fortawesome/fontawesome-free'
 import '../../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 
@@ -14,6 +13,7 @@ function Tasks() {
   useEffect(() => {
          fetch(`${baseURL}/api/tasks`, {
           method: 'GET',
+          mode: 'cors',
           headers: {
               'Content-Type': 'application/json',
               'Accept': 'application/json'
