@@ -15,8 +15,10 @@ function Tasks() {
           method: 'GET',
           mode: 'cors',
           headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Headers" : "Content-Type",
+              "Access-Control-Allow-Origin": "*",
+              "Accept": "application/json"
           }
       })
       .then((res) => res.json())
