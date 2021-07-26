@@ -16,7 +16,6 @@ function Tasks() {
           mode: 'cors',
           headers: {
               "Content-Type": "application/json",
-              "Access-Control-Allow-Headers" : "Content-Type",
               "Access-Control-Allow-Origin": "*",
               "Accept": "application/json"
           }
