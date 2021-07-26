@@ -12,10 +12,9 @@ function Tasks() {
 
   useEffect(() => {
          fetch(`${baseURL}/api/tasks`, {
-          mode: 'no-cors',
           method: 'GET',
           headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
           }
       })
       .then((res) => res.json())
