@@ -51,7 +51,7 @@ function Tasks() {
       
       <table className={classes.table}>
         <thead className={classes.thead}>
-          <th>Id{baseURL}</th>
+          <th>Id</th>
           <th>Title</th>
           <th>Project Name</th>
           <th>User</th> 
