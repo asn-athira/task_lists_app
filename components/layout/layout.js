@@ -4,9 +4,9 @@ import Navbar from './navbar';
 
 function Layout(props) {
   return (
-    <Fragment>
+    <Fragment >
       <Navbar />
-      <main>{props.children}</main>
+      <main style={{ background: '#D5DBDB',}}>{props.children}</main>
     </Fragment>
   );
 }

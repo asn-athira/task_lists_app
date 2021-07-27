@@ -3,32 +3,12 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 90px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  padding-left: 220px;
 }
-.table {
-  border-collapse: collapse;
-  width: 100%;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.th {
-  text-align: left;
-  padding: 8px;
-}
-.td {
-  text-align: left;
-  padding: 8px;
-  border: 1 px solid black;
-}
-
-.tr:nth-child(even){background-color: #f2f2f2}
-
-.thead {
-  background-color: #4CAF50;
-  color: white;
-}
-.tbody{
-    background-color: #D5DBDB;
-    
+.taskhead{
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 20px;
 }

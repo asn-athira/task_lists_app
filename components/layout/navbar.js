@@ -1,25 +1,17 @@
 import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, NavbarBrand, Container } from 'react-bootstrap';
 
-import classes from './navbar.module.css';
-
-function Navbar() {
+function Navmenu() {
   return (
-    <header className={classes.header}>
-      <Link href='/tasks'>
-        <a>
-          <div className={classes.logo}>Task Lists</div>
-        </a>
-      </Link>
-      <nav>
-        <ul>
-          <li>
-            <Link href='/create'>Create New</Link>
-          </li>         
-          
-        </ul>
-      </nav>
-    </header>
+   
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <NavbarBrand href="tasks">ToodleDo</NavbarBrand>
+        
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default Navmenu;

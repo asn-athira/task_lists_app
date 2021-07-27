@@ -1,35 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+body{
+    background-color: #D5DBDB;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    float: right;
+    display: flex;
+  justify-content: space-between; 
+  left: 200px;
+}
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}
 
 *{
     font-family: 'quicksand',Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    background:#D5DBDB;
-}
-th{
-  padding:3px;
-    
-}
-td{
-  border:3px solid black;
-  background:#fff;
-  cursor:default;
-  padding:3px;
-}
+
+
 
 a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .fa-trash {
-    background-color: red;
+    color: red;
 }
 .fa {
-  background: blueviolet;
-  color: white;
+  color: blue;
 }
 .fa-button{
     background: blueviolet;
@@ -47,9 +51,7 @@ a:-webkit-any-link {
     border-bottom-right-radius: 20px;
     box-shadow:0 3px 20px 0px rgba(0, 0, 0, 0.1)
 }
-td{
-    border-radius: 1 px solid black;
-}
+
 .form-modal button{
     cursor: pointer;
     position: relative;
