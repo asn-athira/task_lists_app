@@ -22,6 +22,8 @@ function Tasks() {
 
   const initTask = {title: '', description: '', project_name: '', user: '', status: '', si_no: '1'};
   const [task, setTask] = useState(initTask);
+  const i = 1;
+
    // const baseURL = "http://localhost:8080"
 
     
@@ -257,9 +259,9 @@ function Tasks() {
         <Card.Body>
           <Table responsive="sm">
             <tbody>
-             {data.map((task, i) => (
-              <tr>
-                <td>TL - {task.id}</td>
+             {data.map((task,i=1) => (
+              <tr key={i}>
+                <td>TL - {i++}</td>
                 <td style={{ width: '600px',}}>
                   <b><Link href={`/show?id=${task.id}`} className='text-link'>{task.title}</Link></b><br />
                   <i style={{ background: 'white', color: 'black',}} className="fa fa-user" />&nbsp;&nbsp;&nbsp;&nbsp;{task.user}&nbsp;&nbsp;&nbsp;&nbsp;
